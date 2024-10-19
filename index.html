@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Darshana Mishra's portfolio showcasing data analytics, machine learning projects, and insights from various industries including retail, insurance, and education.">
+    <meta name="keywords" content="Data Analyst, Machine Learning, Portfolio, Python, SQL, Power BI, Tableau, Darshana Mishra">
+    <meta name="author" content="Darshana Mishra">
+    <title>Darshana Mishra | Data Analyst Portfolio</title>
+    <title>Darshana Mishra | Data Analyst Portfolio | Excel, SQL, Power BI, Python, Machine Learning Projects</title>
+    <title>Darshana Mishra</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Darshana Mishra",
+          "jobTitle": "Data Analyst",
+          "url": "https://your-portfolio-link.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/darshanamishra25/",
+            "https://github.com/Darshanamishra"
+          ],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "NPower Junior Data Analyst Program"
+          },
+          "knowsAbout": ["Data Analytics", "Machine Learning", "SQL", "Power BI", "Python", "Excel", "Tableau"],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelancer"
+          }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="https://www.linkedin.com/in/darshanamishra25/" target="_blank">
+                <img src="images\logo.png" alt="LinkedIn">
+            </a>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#aboutme">About me</a>
+            <a href="#skills">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- Profile Section -->
+    <section id="home">
+        <div class="profile-container" style="max-width: 80%; margin: 0 auto; padding: 20px;">
+            <div class="profile-text">
+                <h1 style="font-size: 36px;">Hello, I am Darshana!</h1>
+                <p>
+                    Welcome to my portfolio website.
+                </p>
+                <p>
+                    I enjoy digging into complex data to uncover valuable insights, turning information into clear strategies that drive meaningful decisions and results.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- About Me Section -->
+    <section id="aboutme">
+        <div class="aboutme title">
+            <h1>About me</h1>
+        </div>
+        <div class="aboutme-container">
+            
+            <div class="aboutme-content">
+                <p>Hi, I’m Darshana! I love diving into data to find meaningful insights that help solve real-world problems. With experience across retail, education, and insurance, I’ve worked on a range of data projects that gave me the opportunity to use advanced tools and techniques to create actionable results.</p>
+                <p>I’m especially passionate about machine learning and enjoy using different models to tackle unique business challenges. My mix of technical skills and curiosity helps me make the most out of data to drive impact and deliver results.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Skillset Section with Icons and Projects -->
+    <section id="skills">
+        <div class="skills title">
+            <h1>My Projects</h1>
+        </div>
+
+
+        <div class="skills-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+
+            <!--Power BI-->
+            <div class="skill-box" style="flex: 1; margin: 10px; max-width: 23%;">
+                <a href="javascript:void(0);" onclick="openModal('powerBIModal')">
+                    <img src="images/icons8-bicycle-100.png" alt="SQL Icon" class="icon">
+                    <h4>Speedle Bikes Performance Dashboard- OLAP</h4>
+                    <p>An interactive dashboard showcasing Speedle Bikes' sales, product performance, and team metrics for data-driven insights</p>
+                </a>
+            </div>
+            <!-- Modal for Power BI Project -->
+            <div id="powerBIModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('powerBIModal')">&times;</span>
+
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <div class="project-header">
+                            <button class="project-type">Power BI Project</button>
+                            <h2>Interactive Sales Performance Dashboard</h2>
+                            <p class="domain-function"><strong>Domain:</strong> OLAP</p>
+                        </div>
+                    </div>
+
+                    <!-- Carousel for images -->
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <img src="images\speedle\dashboard-home.png" alt="Home">
+                                <p>Home Page of the Dashboard</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images\speedle\dashboard-sales.png" alt="Sales Insight">
+                                <p>Tracking revenue and sales targets</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images\speedle\dashboard-product.png" alt="Product Overview">
+                                <p>Product sales and performance insights</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images\speedle\dashboard-team.png" alt="Team Performance">
+                                <p>Team performance and contributions</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images\speedle\dashboard-data.png" alt="Data Model">
+                                <p>Detailed sales and customer data</p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Carousel controls -->
+                        <button class="carousel-control prev" onclick="moveToPrevSlide('powerBIModal')">&#10094;</button>
+                        <button class="carousel-control next" onclick="moveToNextSlide('powerBIModal')">&#10095;</button>
+                    </div>
+
+                    <!-- Buttons for viewing -->
+                    <div class="project-buttons">
+                        <a href="https://github.com/Darshanamishra/Speedle-Bike-Store-Sales-Insight" class="btn btn-github" target="_blank">
+                            <img src="images/github.jpg" alt="GitHub Icon"> View Project on GitHub
+                        </a>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>This project involved creating an interactive sales dashboard for Speedle Bikes using Power BI, leveraging a robust data pipeline and advanced analytics.</p>
+                        <h4>Workflow:</h4>
+                        <ul>
+                            <br>
+                            <strong>1. Data Gathering:</strong> Extracted data from a robust MySQL database using comprehensive
+                            <em>SQL</em> queries to ensure relevant and accurate data for analysis.</br>
+                            <br>
+                            <strong>2. Data Cleaning & Exploration:</strong> Performed in-depth data cleaning and exploratory data analysis using
+                            <em>MySQL DBMS</em>, identifying key data patterns and ensuring data quality for further analysis.</br>
+                            <br>
+                            <strong>3. Data Connectivity:</strong> Integrated MySQL with Power BI through
+                            <em>ODBC</em> connections, enabling seamless data flow and real-time updates for dynamic dashboards.</br>
+                            <br>
+                            <strong>4. Data Transformation:</strong> Utilized
+                            <em>Power Query</em> for efficient data transformation, including data wrangling, cleaning, and reshaping to optimize the dataset for analysis.</br>
+                            <br>
+                            <strong>5. DAX Measures & Visualizations:</strong> Developed and implemented advanced
+                            <em>DAX measures</em> to create insightful and interactive visualizations, such as KPI matrices, trend analysis, and
+                            <em>Dashboard Reporting</em> for performance tracking and decision-making support.</br>
+                        </ul>
+
+                    </div>
+                    <div id="powerbi-dashboard" style="margin-top: 40px;">
+
+                        <h3>Speedle Sales Insight Report:</h3>
+                        <iframe width="100%"
+                                height="600"
+                                src="https://app.powerbi.com/view?r=eyJrIjoiNDFiYzY0MGUtMWM5Mi00OWNlLTg5OTQtNzAzMTA3NjQ1ODVlIiwidCI6IjliMzQwYjg1LWNiZGUtNDY4MS1hNmQwLTBlMTI2MDk0MzYzMyJ9"
+                                frameborder="0"
+                                allowFullScreen="true">
+                        </iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <!--Excel-->
+            <div class="skill-box" style="flex: 1; margin: 10px; max-width: 23%;">
+                <a href="javascript:void(0);" onclick="openModal('excelModal')">
+                    <img src="images\Auto insurance.png" alt="Excel Icon" class="icon">
+                    <h4>Auto Insurance Claims Analysis</h4>
+                    <p>Analyzed auto insurance claims data and created dynamic dashboards to track key metrics.</p>
+                </a>
+            </div>
+            <!-- Modal for Excel Project -->
+            <div id="excelModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('excelModal')">&times;</span>
+
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <div class="project-header">
+                            <button class="project-type">Excel Project</button>
+                            <h2>Auto Insurance Claims Analytics</h2>
+                            <p class="domain-function"><strong>Domain:</strong> Insurance</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <img src="images/Auto insurance/Dashboard4.png" alt="Insurance Claims Dashboard">
+                                <p>Dashboard view featuring parenthood status and vehicle type filters with interactive results</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Auto insurance/Dashboard3.png" alt="Insurance Claims Dashboard">
+                                <p>Dashboard view with filters for driving experience, parenthood status, and vehicle type, offering interactive results</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Auto insurance/Dashboard1.png" alt="Insurance Claims Dashboard">
+                                <p>Dashboard view with filters for driving experience, parenthood status, and vehicle type, offering interactive results</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Auto insurance/Pivot Tables.png" alt="Insurance Claims Dashboard">
+                                <p>Utilize pivot tables for multi-level filtering and enhanced dashboard interactivity</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Auto insurance/Power Query.png" alt="Insurance Claims Dashboard">
+                                <p>Power Query for efficient data transformation and seamless data pipeline management</p>
+                            </div>
+                        </div>
+
+                        <!-- Carousel controls -->
+                        <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+                    <!-- Buttons for viewing -->
+                    <div class="project-buttons">
+                        <a href="https://github.com/darshanamishra/Auto-Insurance-claim-analysis" class="btn btn-github" target="_blank">
+                            <img src="C:\Users\Ruhi\Desktop\website\images\github.jpg" alt="GitHub Icon"> View Project on GitHub
+                        </a>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>In this project, I analyzed auto insurance claims data using Excel pivot tables, Power Query, and various data visualization techniques. The goal of the project was to help insurance companies better understand risk factors, claim trends, and customer behavior, leading to more informed decision-making processes.</p>
+
+                        <p>Key deliverables included a dynamic, interactive dashboard that provided insights on claims across different time periods and geographic regions. The dashboard allowed users to filter data based on multiple criteria such as claim type, policy period, and customer demographics, enabling more tailored strategies for risk mitigation and customer service optimization.</p>
+
+
+                        <p>Throughout this project, I have demonstrated my deep understanding and practical knowledge in the following areas::</p>
+
+                        <ul>
+                            <br>1. Data Transformation Techniques</br>
+                            <br>2. Pivot Table</br>
+                            <br>3. Power Query</br>
+                            <br>4. Exploratory Data Analysis</br>
+                            <br>5. Conditional Formatting</br>
+                            <br>6. Risk Factors Metrics</br>
+                            <br>7. Interactive Dashboard</br>
+                        </ul>
+                        <p>The insights derived from the analysis helped the insurance company improve operational efficiency, reduce fraud, and maximize profitability by identifying high-risk areas and optimizing resource allocation.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!--Python-->
+            <div class="skill-box" style="flex: 1; margin: 10px; max-width: 23%;">
+                <a href="javascript:void(0);" onclick="openModal('pythonModal')">
+                    <img src="images/icons8-python-94.png" alt="Python Icon" class="icon">
+                    <h4>Titanic Survival Prediction Model</h4>
+                    <p>Built machine learning models for predictive analysis and automated key data processing tasks.</p>
+                </a>
+            </div>
+            <!-- Modal for Python Project -->
+            <div id="pythonModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('pythonModal')">&times;</span>
+
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <div class="project-header">
+                            <button class="project-type">Python Project</button>
+                            <h2>Titanic Random Forest Classifier</h2>
+                            <p class="domain-function"><strong>Function:</strong> Machine Learning</p>
+                        </div>
+                    </div>
+
+                    <!-- Carousel for images -->
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <img src="C:\Users\Ruhi\Desktop\website\images\Python\Table of Content.png" alt="Table of Content">
+                                <p>Table of Contents outlining the steps of the project</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="C:\Users\Ruhi\Desktop\website\images\Python\Data Wrangling.png" alt="Data Wrangling">
+                                <p>Data Wrangling steps used in data preprocessing</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="C:\Users\Ruhi\Desktop\website\images\Python\Exploratory Analysis.png" alt="Exploratory Analysis">
+                                <p>Exploratory Data Analysis with visualization techniques</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="C:\Users\Ruhi\Desktop\website\images\Python\Heatmap.png" alt="Heatmap">
+                                <p>Exploratory analysis with heatmap visualization</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="C:\Users\Ruhi\Desktop\website\images\Python\evaluation.png" alt="Model Training">
+                                <p>Model's accuracy score</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="C:\Users\Ruhi\Desktop\website\images\Python\Model Development.png" alt="Model Training">
+                                <p>Training machine learning models for survival prediction</p>
+                            </div>
+                        </div>
+
+                        <!-- Carousel controls -->
+                        <button class="carousel-control prev" onclick="moveToPrevSlide()">&#10094;</button>
+                        <button class="carousel-control next" onclick="moveToNextSlide()">&#10095;</button>
+                    </div>
+
+                    <!-- Buttons for viewing -->
+                    <div class="project-buttons">
+                        <a href="https://github.com/darshanamishra/ML-Model-Development" class="btn btn-github" target="_blank">
+                            <img src="images/github.jpg" alt="GitHub Icon"> View Project on GitHub
+                        </a>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <p>This project involved building a predictive model for Titanic survival using Python. It covers key aspects such as data wrangling, exploratory data analysis, and model training using machine learning algorithms like logistic regression, decision trees, and random forests.</p>
+
+                        <p>Key deliverables include a comprehensive analysis of the dataset, feature engineering, model training, and performance evaluation, followed by insights into how to optimize model performance.</p>
+
+                        <p>Throughout this project, I demonstrated proficiency in the following areas:</p>
+
+                        <ul>
+                            <li>Data Wrangling and Cleaning</li>
+                            <li>Exploratory Data Analysis (EDA)</li>
+                            <li>Machine Learning Model Development</li>
+                            <li>Hyperparameter Tuning</li>
+                            <li>Model Evaluation Metrics</li>
+                        </ul>
+                        <p>This project provided key insights into predictive modeling and highlighted the importance of feature selection and model optimization in real-world data science applications.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container" style="max-width: 80%; margin: 0 auto; padding: 0px;">
+            <footer style="background-color: #111111; padding: 40px 20px; color: #FFD700; text-align: center;">
+                <h2 style="font-size: 2rem; margin-bottom: 20px;">Let's Collaborate!</h2>
+                <p style="font-size: 1.2rem; color: #FFFFFF;">Looking for a data analyst to turn your data into actionable insights? I’d love to discuss how I can help your business grow.</p>
+                <p style="font-size: 1.2rem; color: #FFFFFF;">Let’s connect and create something impactful together.</p>
+                <!-- CTA Button to Email -->
+                <a href="mailto:darshanamishra25@gmail.com" style="display: inline-block; padding: 12px 30px; margin-top: 20px; font-size: 1.1rem; color: #111111; background-color: #FFD700; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                    Get in Touch
+                </a>
+
+
+
+                <!-- Social Links -->
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/in/darshanamishra25/" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn" width="32px">
+                    </a>
+                    <a href="https://github.com/Darshanamishra" target="_blank">
+                        <img src="images/github.jpg" alt="GitHub" width="32px">
+                    </a>
+                    <a href="https://medium.com/@darshanamishra25" target="_blank">
+                        <img src="images/medium.png" alt="Medium" width="32px">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Darshana Mishra</p>
+    </footer>
+
+    <!-- Java Script -->
+    <script>
+        // Get all the sections and the nav links
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
+
+        // Add an event listener for scrolling
+        window.addEventListener("scroll", () => {
+            let currentSection = "";
+
+            // Loop through the sections to find the current one in view
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                // Check if the scroll is within the bounds of this section
+                if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
+
+            // Loop through the nav links and update the active class
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${currentSection}`) {
+                    link.classList.add("active");
+                }
+            });
+        });
+
+        // Function to open the modal
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Close modal when clicking outside the modal content
+        window.onclick = function (event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        };
+
+        // Function to initialize each carousel independently
+        function initCarousel(carouselSelector, prevButtonSelector, nextButtonSelector) {
+            const carousel = document.querySelector(carouselSelector);
+            const slides = carousel.querySelectorAll('.carousel-item');
+            let currentSlideIndex = 0;
+
+            // Move to next slide
+            function moveToNextSlide() {
+                currentSlideIndex++;
+                if (currentSlideIndex >= slides.length) {
+                    currentSlideIndex = 0; // Loop back to first slide if at the end
+                }
+                updateCarousel();
+            }
+
+            // Move to previous slide
+            function moveToPrevSlide() {
+                currentSlideIndex--;
+                if (currentSlideIndex < 0) {
+                    currentSlideIndex = slides.length - 1; // Loop back to last slide if at the start
+                }
+                updateCarousel();
+            }
+
+            // Update carousel position
+            function updateCarousel() {
+                const slideWidth = slides[0].clientWidth;
+                carousel.style.transform = `translateX(${-slideWidth * currentSlideIndex}px)`;
+            }
+
+            // Add event listeners for next and prev buttons
+            document.querySelector(nextButtonSelector).addEventListener('click', moveToNextSlide);
+            document.querySelector(prevButtonSelector).addEventListener('click', moveToPrevSlide);
+
+            // Initialize carousel at the first slide
+            updateCarousel();
+        }
+
+        // Initialize all carousels for Excel, Python, SQL, and Power BI projects
+        document.addEventListener('DOMContentLoaded', () => {
+            initCarousel('#excelModal .carousel', '#excelModal .prev', '#excelModal .next');
+            initCarousel('#pythonModal .carousel', '#pythonModal .prev', '#pythonModal .next');
+            initCarousel('#powerBIModal .carousel', '#powerBIModal .prev', '#powerBIModal .next');
+        });
+    </script>
+
+
+
+
+
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
