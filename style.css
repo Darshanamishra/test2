@@ -1,3 +1,4 @@
+/* General body and text styling */
 body, html {
     height: 100%;
     margin: 0;
@@ -7,75 +8,51 @@ body, html {
     color: #FFFFFF; /* White text color */
 }
 
-
 /* Logo container */
-.logo {
-    position: relative;
-    display: inline-block;
+.logo img {
+    display: block;
+    width: 80px;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-    /* Image styling */
-    .logo img {
-        display: block;
-        width: 80px; /* Adjust the size as needed */
-        height: auto;
-        border-radius: 8px; /* Optional: Add rounded corners */
-    }
-
-/* Gradient overlay */
-.logo-gradient-overlay {
-    position: relative;
-}
-
-    .logo-gradient-overlay::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(45deg, rgba(0, 123, 255, 0.7), rgba(0, 198, 255, 0.7)); /* Blue gradient with transparency */
-        border-radius: 8px; /* Optional: Match the image's rounded corners */
-        opacity: 0; /* Start invisible */
-        transition: opacity 0.3s ease-in-out; /* Smooth fade-in transition */
-    }
-
-    .logo-gradient-overlay:hover::after {
-        opacity: 1; /* Show the gradient on hover */
-    }
 .logo:hover img {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Adds a glowing shadow effect */
+    transform: scale(1.1); /* Slight enlargement on hover */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Glowing shadow effect */
 }
 
 
 
 
-/* Header and navigation styling */
+
+
+
+/* Header and navigation */
 header {
-    position: fixed; /* Fixes the header at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Ensure the header spans the entire width */
+    width: 100%;
     display: flex;
-    justify-content: space-between; /* Spreads logo and links to the sides */
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 40px; /* Reduced padding for a smaller height and spacing on left & right */
-    background-color: #333333; /* Dark gray background for header */
-    color: #FFD700; /* Gold text in the header */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures the header stays on top of other content */
+    padding: 5px 40px;
+    background-color: #333333; /* Dark gray background */
+    color: #FFD700; /* Gold text */
+    z-index: 1000;
 }
 
     header nav {
-        margin-right: 150px; /* Moves the navigation links away from the right edge */
+        margin-right: 150px;
     }
 
         header nav a {
-            margin: 0 20px; /* Adjusted spacing between links */
+            margin: 0 20px;
             text-decoration: none;
             color: #FFD700;
-            font-size: 18px; /* Adjust font size based on your preference */
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
             header nav a:hover {
@@ -83,16 +60,15 @@ header {
                 transform: scale(1.1); /* Slight zoom on hover */
             }
 
-/* Adjust the padding of the body to prevent content from hiding behind the fixed header */
 body {
-    padding-top: 80px; /* Adjust this based on the new header height */
+    padding-top: 80px; /* Prevent content from hiding behind header */
 }
 
-/* Highlight the active link */
+/* Active navigation link */
 nav a.active {
-    color: #FFFFFF; /* White color for active link */
-    text-decoration: underline; /* Underline the active link */
-    font-weight: bold; /* Make the active link bold */
+    color: #FFFFFF; /* White for active link */
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 
@@ -103,201 +79,68 @@ nav a.active {
 
 
 
-
-
-
-
-
-
-/* Profile container styling for centering content */
+/* Profile Section */
 .profile-container {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 80vh; /* Full viewport height to center vertically */
-    text-align: center; /* Center the text within the container */
-    background-color: #111111; /* Background matching dark theme */
-    padding: 0 20px; /* Optional: Padding for smaller screens */
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+    text-align: center;
+    background-color: #111111; /* Dark background */
 }
 
 .profile-text {
-    color: #FFFFFF; /* White text for dark theme */
-    max-width: 600px; /* Restrict the width for better readability */
+    max-width: 600px;
 }
 
-.profile-text h1 {
-    font-size: 2.5rem;
-    color: #FFD700; /* Golden color for the heading */
-    margin-bottom: 20px;
-}
+    .profile-text h1 {
+        font-size: 2.5rem;
+        color: #FFD700; /* Golden color */
+        margin-bottom: 20px;
+    }
 
-.profile-text p {
-    font-size: 1.2rem;
-    color: #ffffff; /* Light gray text */
-    line-height: 1.6;
-}
-
+    .profile-text p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
 
 
 
 
 
 
-
-
-/* About Me Section Styling */
-.aboutme-section {
-    margin-top: 100px;
-    padding: 0 20px;
-    color: white;
-}
-
-/* Heading styling for dark theme */
+/* About Me Section */
 #aboutme .aboutme.title h1 {
-    font-size: 36px; /* Increase font size for emphasis */
-    color: #FFD700; /* Gold color for the heading */
-    font-weight: bold; /* Bold text */
-    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 36px;
+    color: #FFD700; /* Gold color */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
     padding: 50px 20px;
-    text-align: center; /* Center the text */
 }
 
-/* Container for image and About Me content */
 .aboutme-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adds space between the image and content */
+    gap: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Centers the container */
+    margin: 0 auto;
 }
 
-/* Styling for image */
-.photo-container img {
-    width: 200px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 20px; /* Creates a rounded rectangle effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for effect */
-    margin-right: 30px;
-}
-
-/* About Me content styling */
 .aboutme-content {
-    flex: 1; /* Takes up the remaining space next to the image */
+    flex: 1;
 }
 
-    .aboutme-content h1 {
+    .aboutme-content h1, .aboutme-info h2 {
         font-size: 36px;
-        font-weight: bold;
-        color: #FFD700;
+        color: #FFD700; /* Gold */
         margin-bottom: 20px;
-        text-align: left;
     }
 
     .aboutme-content p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.8;
-        text-align: left;
-        margin-bottom: 20px;
-        color: #ffffff;
     }
-
-/* Container for Skills and Education Sections */
-.skills-cert-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px; /* Space between Skills and Education sections */
-    max-width: 1200px;
-    margin: 50px auto 0; /* Margin at the top to separate from About Me */
-    color: white;
-}
-
-    .skills-cert-container div {
-        flex: 1; /* Each section takes up equal space */
-    }
-
-/* Skills and Tools Section */
-.aboutme-info h2, .cert-list h2 {
-    color: #FFD700;
-    margin-bottom: 20px;
-}
-/* Change the color of content inside <strong> to gold */
-.aboutme-info p strong {
-    color: #FFD700; /* Gold color */
-}
-
-
-.aboutme-info p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Certifications List */
-/* Education and Certification Section */
-.certification {
-    padding-left: 30px; /* Adds padding on the left side */
-}
-
-    .certification h2 {
-        color: #FFD700;
-        margin-bottom: 20px;
-    }
-
-.cert-list li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    list-style: none; /* Removes bullet points for consistency with Skills section */
-}
-.cert-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-    .cert-list a {
-        text-decoration: none;
-        color: #FFD700;
-        border-bottom: 2px solid transparent;
-        transition: color 0.3s ease, border-bottom 0.3s ease;
-    }
-
-        .cert-list a:hover {
-            color: #FFFFFF;
-            border-bottom: 2px solid #FFD700;
-        }
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .aboutme-container {
-        flex-direction: column; /* Stacks image and content vertically */
-        align-items: center;
-    }
-
-    .photo-container img {
-        width: 150px; /* Reduce image size for smaller screens */
-        border-radius: 50%; /* Switch to circular image on smaller screens */
-    }
-
-    .aboutme-content {
-        text-align: center;
-    }
-
-    .skills-cert-container {
-        flex-direction: column; /* Stacks sections vertically on small screens */
-    }
-
-    .aboutme-info p, .cert-list li {
-        text-align: center;
-    }
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -314,14 +157,14 @@ nav a.active {
     height: auto; /* Use auto so height adapts on different screens */
 }
 
-/* Heading styling for dark theme */
-#skills .skills.title h1 {
-    font-size: 36px; /* Increase font size for emphasis */
-    color: #FFD700; /* Gold color for the heading */
-    font-weight: bold; /* Bold text */
-    margin-bottom: 20px; /* Add space below the heading */
-    padding: 50px 20px;
-}
+    /* Heading styling for dark theme */
+    #skills .skills.title h1 {
+        font-size: 36px; /* Increase font size for emphasis */
+        color: #FFD700; /* Gold color for the heading */
+        font-weight: bold; /* Bold text */
+        margin-bottom: 20px; /* Add space below the heading */
+        padding: 50px 20px;
+    }
 
 .skills-container {
     display: flex;
@@ -345,38 +188,38 @@ nav a.active {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-box img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
+    .skill-box img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
 
-.skill-box h4 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #FFD700; /* Gold color for skill titles */
-}
+    .skill-box h4 {
+        margin: 10px 0;
+        font-size: 20px;
+        color: #FFD700; /* Gold color for skill titles */
+    }
 
-.skill-box p {
-    font-size: 16px;
-    color: #ffffff; /* Light gray text for skill description */
-}
+    .skill-box p {
+        font-size: 16px;
+        color: #ffffff; /* Light gray text for skill description */
+    }
 
-.skill-box a {
-    text-decoration: none; /* Removes the underline */
-    color: inherit; /* Keeps the color consistent with the rest of the content */
-}
+    .skill-box a {
+        text-decoration: none; /* Removes the underline */
+        color: inherit; /* Keeps the color consistent with the rest of the content */
+    }
 
-/* Hover Effects */
-.skill-box:hover {
-    transform: scale(1.1); /* Slightly enlarges the box */
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Adds a glowing shadow effect */
-}
+    /* Hover Effects */
+    .skill-box:hover {
+        transform: scale(1.1); /* Slightly enlarges the box */
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Adds a glowing shadow effect */
+    }
 
-.skill-box:hover img {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Adds a glowing shadow effect */
-}
+        .skill-box:hover img {
+            transform: scale(1.1); /* Slightly enlarges the image */
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Adds a glowing shadow effect */
+        }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
@@ -386,18 +229,6 @@ nav a.active {
     }
 }
 
-@media (max-width: 768px) {
-    .skill-box {
-        flex: 1 1 45%; /* Adjusts for smaller screens, two boxes per row */
-    }
-}
-
-@media (max-width: 480px) {
-    .skill-box {
-        flex: 1 1 100%; /* Stacks boxes on very small screens */
-        margin-bottom: 20px; /* Add extra space between stacked boxes */
-    }
-}
 
 
 
@@ -406,90 +237,54 @@ nav a.active {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* General section styling for dark theme */
+/* Contact Section */
 .contact-section {
     background-color: #111111; /* Dark background */
     padding: 50px 20px;
     text-align: center;
-    color: #FFD700; /* Gold text for the general section */
-    height: 50vh; /* Adjust the height as per your layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center */
-    align-items: center; /* Horizontally center */
-    margin-top: 50px; /* Add space above the contact section for a page break */
+    color: #FFD700; /* Gold text */
 }
 
-    /* Heading styling */
     .contact-section h2 {
         font-size: 36px;
-        color: #FFD700; /* Gold color for heading */
-        font-weight: bold;
         margin-bottom: 20px;
     }
 
-    /* Paragraph styling for white text */
     .contact-section p {
         font-size: 20px;
-        color: #FFFFFF; /* Change paragraph text to white */
         margin-bottom: 20px;
     }
 
-/* Social links */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between the icons */
-    margin-top: 20px;
+    gap: 20px;
 }
 
     .social-links a img {
         width: 32px;
         height: 32px;
-        transition: transform 0.3s ease; /* Adds smooth hover effect */
+        transition: transform 0.3s ease;
     }
 
         .social-links a img:hover {
             transform: scale(1.2); /* Slight zoom on hover */
         }
 
-/* Add margin or padding for a page break between sections */
-section {
-    margin-top: 100px; /* Adjust this value as needed */
-}
 
 
 
+
+
+
+
+/* Footer */
 footer {
     font-size: 20px;
     text-align: center;
     padding: 10px;
-    background-color: #333333; /* Dark gray background for footer */
-    color: #FFD700; /* goldan text for footer */
-    margin-top: 100px;
-}
-a:hover {
-    transform: scale(1.1); /* Slightly enlarges the button */
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Adds a glowing shadow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both effects */
-}
-
-a {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the default state */
+    background-color: #333333; /* Dark gray background */
+    color: #FFD700; /* Gold text */
 }
 
 
@@ -499,25 +294,7 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Excel small window*/
-
-/* Modal base styling for dark theme */
+/* Modal Styling */
 .modal {
     display: none;
     position: fixed;
@@ -530,209 +307,94 @@ a {
     overflow-y: auto;
 }
 
-/* Modal content styling */
 .modal-content {
-    background-color: #222222; /* Dark background */
-    color: #ffffff; /* White text for readability */
+    background-color: #222222;
+    color: #ffffff;
     margin: 5% auto;
     padding: 20px;
     border-radius: 8px;
     width: 90%;
     max-width: 900px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
     text-align: left;
-    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Close button */
 .close {
     position: absolute;
     right: 20px;
     top: 20px;
     font-size: 30px;
     font-weight: bold;
-    color: #FFD700; /* Gold color for close button */
+    color: #FFD700; /* Gold */
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
     .close:hover {
-        color: #ffffff; /* White color on hover */
+        color: #ffffff; /* White on hover */
     }
 
-/* Modal header */
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.project-header {
-    max-width: 70%;
-}
-
-.project-type {
-    background-color: #444444; /* Darker background for the project type */
-    color: #FFD700; /* Gold text */
-    border: none;
-    padding: 5px 10px;
-    font-size: 0.9rem;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.project-header h2 {
-    margin: 10px 0;
-    font-size: 1.8rem;
-    color: #FFD700; /* Gold color for heading */
-}
-
-.project-header p {
-    font-size: 1rem;
-    color: #ffffff; /* Light gray for subtitle */
-}
-
-/* Carousel container */
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Adjust max-width for carousel */
-    overflow: hidden; /* Hide everything outside the container */
+    max-width: 800px;
+    overflow: hidden;
     margin: auto;
     margin-bottom: 20px;
 }
 
 .carousel {
-    display: flex; /* Align slides horizontally */
-    transition: transform 1.8s cubic-bezier(0.5, 0, 0.5, 1); /* Custom timing for smoother effect */
+    display: flex;
+    transition: transform 1.8s cubic-bezier(0.5, 0, 0.5, 1); /* Smooth transition */
 }
 
-
 .carousel-item {
-    min-width: 100%; /* Each slide takes full container width */
+    min-width: 100%;
     text-align: center;
-    box-sizing: border-box;
 }
 
     .carousel-item img {
-        max-width: 90%; /* Adjust image size as needed */
+        max-width: 90%;
         height: auto;
         display: block;
         margin: 0 auto;
     }
 
-    .carousel-item p {
-        margin-top: 10px;
-        font-size: 1rem;
-        color: #ffffff; /* Light gray text */
-    }
-
-/* Carousel controls */
 .carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent background */
-    color: #FFD700; /* Gold color for controls */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFD700;
     padding: 10px;
-    border: none;
     cursor: pointer;
-    font-size: 18px;
-    z-index: 10;
+    transition: background-color 0.3s ease;
 }
 
 .prev {
-    left: 0px;
+    left: 0;
 }
 
 .next {
-    right: 0px;
+    right: 0;
 }
 
 .carousel-control:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Project buttons */
-.project-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
-
-    .project-buttons a {
-        display: inline-flex;
-        align-items: center;
-        padding: 12px 20px; /* Increased padding for a more substantial button */
-        font-size: 1rem; /* Adjusted font size for better readability */
-        border-radius: 25px; /* Rounded corners for a pill-shaped button */
-        color: #FFFFFF; /* White text */
-        text-decoration: none;
-        background: linear-gradient(45deg, #007BFF, #00C6FF); /* Gradient from darker blue to lighter blue */
-        margin-right: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-        transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
-    }
-
-        .project-buttons a img {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-        }
-
-        /* Hover effect */
-        .project-buttons a:hover {
-            background: linear-gradient(45deg, #00C6FF, #007BFF); /* Reverse blue gradient on hover */
-            color: #000000; /* Black text on hover */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Increased shadow for hover effect */
-            transform: translateY(-2px); /* Slight lift effect on hover */
-        }
-
-
-
-/* Project details section */
-.project-details {
-    margin-top: 30px;
-}
-
-    .project-details h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-        color: #FFD700; /* Gold heading */
-    }
-
-    .project-details p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 10px;
-        color: #ffffff; /* Light gray text */
-    }
-
-    .project-details ul {
-        list-style-type: disc;
-        margin-left: 20px;
-        font-size: 1rem;
-        color: #ffffff; /* White list items */
-    }
-
-        .project-details ul li {
-            margin-bottom: 5px;
-        }
-
-/* Responsive design */
+/* Responsive Modal */
 @media (max-width: 768px) {
     .modal-content {
-        width: 95%; /* Adjust modal width on smaller screens */
+        width: 95%; /* Adjust modal width for small screens */
     }
 
     .carousel-item img {
-        max-width: 90%; /* Adjust image size for smaller screens */
-    }
-
-    .project-header h2 {
-        font-size: 1.5rem;
+        max-width: 90%;
     }
 }
 
+/* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }
