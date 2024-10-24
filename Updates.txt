@@ -1,4 +1,0 @@
-1. remove image
-2. mobile friendly interface
-3. bring skills in the bottom
-4. add ppt to the project
